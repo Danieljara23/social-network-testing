@@ -1,0 +1,68 @@
+::root {
+  --primary-color: #f2f3f8;
+  --white: #ffffff;
+  /* --background-main-color: #f2f3f8; */
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f2f3f8;
+}
+
+h1 {
+  text-align: center;
+  color: #474779;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-item {
+  background-color: white;
+  border-radius: 12px;
+  display: grid;
+  grid-gap: 10px;
+  padding: 5px 15px;
+  grid-template-columns: 30% 70%;
+  max-width: 400px;
+  width: 400px;
+  margin-bottom: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.post-item img {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.post-item h4 {
+  margin: 0 0 5px 0;
+}
+
+.post-item p {
+  color: #606a85;
+  margin: 0;
+}
+
+.post-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.like-button {
+  position: absolute;
+  background-color: blue;
+  bottom: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+}
+
+.material-icons.red600 {
+  color: #f01a0e;
+}
