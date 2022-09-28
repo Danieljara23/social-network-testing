@@ -1,7 +1,8 @@
-import { likeAPost } from "./firebase";
-import { getRandomName, getRandomPicture } from "./utils";
+import { likeAPost } from "./firebase.js";
+import { getRandomName, getRandomPicture } from "./utils.js";
 
 export const getPostsHtml = (posts) => {
+
   const postsHtml = posts
     .map((post) => {
       const randomImageUrl = `https://avatars.dicebear.com/api/avataaars/${getRandomName()}.svg`;
@@ -40,6 +41,12 @@ export const getPostsHtml = (posts) => {
       } else {
         postEl.classList.add("liked");
         spanEl.textContent = "favorite";
+
+        spanEl.classList.remove("animate");
+        spanEl.classList.add("animate");
+        setTimeout(function () {
+          spanEl.classList.remove("animate");
+        }, 1500);
       }
     });
   });

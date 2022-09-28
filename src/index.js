@@ -1,6 +1,5 @@
-import { getPosts } from "./firebase";
-import { getPostsHtml } from "./Posts";
-import "./styles.css";
+import { getPosts } from "./firebase.js";
+import { getPostsHtml } from "./Posts.js";
 
 const printPosts = async () => {
   const posts = await getPosts();
