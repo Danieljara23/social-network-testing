@@ -1,4 +1,4 @@
-import { getDocs, getDoc, collection, db, updateDoc, doc } from "../config.js";
+import { updateDoc } from "../config.js";
 import { getPosts, likeAPost } from "./firebase.js";
 
 jest.mock("../config", () => ({
